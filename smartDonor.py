@@ -53,9 +53,9 @@ if st.button("Predict"):
     prediction = model.predict(input_data_encoded)
     
     # Display the prediction result
-   # st.write(f"Predicted likelihood of donation: {prediction[0]:.2f}")
+    #st.write(f"Predicted likelihood of donation: {prediction[0]:.2f}")
     
-st.markdown(
-        f"<h1 style='color: #FF1493; font-weight: bold; font-size: 36px;'>Predicted Donor Score: {prediction}</h1>",
+    st.markdown(
+        f"<h1 style='color: #FF1493; font-weight: bold; font-size: 36px;'>Predicted likelihood of donation: {prediction[0]:.2f}</h1>",
         unsafe_allow_html=True
     )
