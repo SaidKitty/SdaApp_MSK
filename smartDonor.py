@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 # Loading the saved XGBoost model and the OneHotEncoder
 model = joblib.load('xgboost_model_donor.pkl')
-encoder = joblib.load('onehot_encoder_donor.pkl')  # Assuming you have saved your encoder separately
+encoder = joblib.load('onehot_encoder_donor.pkl') 
 
 # Title
 st.title("Smart Donor App")
